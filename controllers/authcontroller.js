@@ -86,7 +86,7 @@ export const login =  async (req,res)=>{
             })
         }
 
-        const token = user.jwtToken
+        const token = user.jwtToken()
         user.password = undefined
 
         const cookieOption = {
